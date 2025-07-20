@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ar. Suneel Kumar Koduru - Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
     body {
       margin: 0;
@@ -19,12 +23,23 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      position: relative;
     }
 
     header h1 {
       margin: 0;
       font-size: 24px;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    nav {
+      position: relative;
     }
 
     nav ul {
@@ -39,10 +54,44 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li a i {
+      margin-right: 8px;
     }
 
     nav ul li a:hover {
       color: #c62828;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #402c3d;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 1000;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        right: 40px;
+      }
     }
 
     .projects-grid {
@@ -100,14 +149,16 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Ar. SUNEELKUMAR KODURU</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     <nav>
-      <ul>
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="walkthroughs.html">Walkthroughs</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul id="menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Portfolio</a></li>
+        <li><a href="walkthroughs.html"><i class="fas fa-video"></i> Walkthroughs</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -116,7 +167,7 @@
     <div class="projects-grid">
       <div class="project-card">
         <a href="Avekshahospital.html" style="text-decoration: none;">
-          <img src="AVEKSHA HOSPITAL ELEVATION_page-0004.jpg" alt="Aveksha Hospital" />
+          <img src="final image-3.png" alt="Aveksha Hospital" />
           <h2>Aveksha Hospital</h2>
         </a>
       </div>
@@ -144,29 +195,29 @@
 
       <div class="project-card">
         <a href="Lacantina.html" style="text-decoration: none;">
-          <img src="LA CANTINA VIEWS._page-0009.jpg" alt="La Cantina Project">
+          <img src="LA CANTINA VIEWS._page-00118.jpg" alt="La Cantina Project">
           <h2>La Cantina</h2>
         </a>
       </div>
       
       <div class="project-card">
-        <a href="apartment.html" style="text-decoration: none;">
-          <img src="images/apartment-thumb.jpg" alt="Apartment Project">
-          <h2>Apartment</h2>
+        <a href="Victoriaresidential.html" style="text-decoration: none;">
+          <img src="Drawing room and Hall Interiors_page-0007.jpg" alt="Victoria Residential Project">
+          <h2>Victoria Residential</h2>
         </a>
       </div>
 
       <div class="project-card">
-        <a href="#" style="text-decoration: none;">
-          <img src="project5.jpg" alt="Project 5" />
-          <h2>Commercial Building Design</h2>
+        <a href="Houseelevations.html" style="text-decoration: none;">
+          <img src="elevation1.jpeg" alt="House Elevations" />
+          <h2>House Elevations</h2>
         </a>
       </div>
 
       <div class="project-card">
-        <a href="#" style="text-decoration: none;">
-          <img src="project6.jpg" alt="Project 6" />
-          <h2>Residential Apartment</h2>
+        <a href="Houseinteriors.html" style="text-decoration: none;">
+          <img src="07.jpeg" alt="House Interiorss" />
+          <h2>House Interiorss</h2>
         </a>
       </div>
     </div>
@@ -175,5 +226,12 @@
   <footer>
     <p>&copy; 2025 Ar. SuneelKumar Koduru. Website developed by <strong>Haritha Koduru</strong>.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+
 </body>
 </html>
