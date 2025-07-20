@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narsipatnam Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    /* Top header */
+    .top-header {
+      background: #60485a;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 2.2em;
+      color: white;
+      text-shadow: 1px 1px 1px #222;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #c62828;
+    }
+
+    /* Project Title */
+    .project-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 0 auto 40px;
+      padding: 12px 24px;
+      background-color: #c62828;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      text-align: center;
+    }
+
+    .back-container {
+      text-align: center;
+    }
+
+    .back-button:hover {
+      background-color: #a30000;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="logo">Ar. SUNEELKUMAR KODURU</div>
+    <nav class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="walkthroughs.html">Walkthroughs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Project Title Header -->
+  <div class="project-title">Narsipatnam Layout Project</div>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+<img src="LA CANTINA VIEWS._page-0002.jpg" alt="Temple Image 1" />
+<img src="LA CANTINA VIEWS._page-0003.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0004.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0005.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0006.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0007.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0008.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0009.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0010.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0011.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0012.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0013.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0014.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0015.jpg" alt="Image 5235" />
+<img src="LA CANTINA VIEWS._page-0016.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0017.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0018.jpg" alt="Image 5235" />
+    <img src="LA CANTINA VIEWS._page-0019.jpg" alt="Image 5235" />
+  </section>
+
+  <!-- Back to Home Button -->
+  <div class="back-container">
+    <a class="back-button" href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ar. Suneelkumar Koduru. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+
+</body>
+
+</html>
+  

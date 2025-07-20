@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    .top-header {
+      background: #60485a;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 2.2em;
+      color: white;
+      text-shadow: 1px 1px 1px #222;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #c62828;
+    }
+
+    .about-section {
+      padding: 40px;
+      background-color: #fffaf5;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .about-image {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .about-image:hover {
+      transform: scale(1.05);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-text h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-header">
+    <div class="logo">Ar. SUNEELKUMAR KODURU</div>
+    <nav class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="walkthroughs.html">Walkthroughs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <section class="about-section">
+    <div class="about-container">
+      <img src="suneel.jpg" alt="Ar. Suneel Kumar Koduru" class="about-image" />
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          AR. Suneel Kumar Koduru is an experienced architect known for delivering innovative and sustainable designs
+          across a wide range of residential, commercial, and religious projects. His vision blends aesthetic
+          excellence with functional practicality, resulting in visually captivating and purpose-driven spaces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ar. SUNEELKUMAR KODURU. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+</body>
+
+</html>

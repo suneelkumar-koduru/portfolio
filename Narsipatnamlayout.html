@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narsipatnam Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    /* Top header */
+    .top-header {
+      background: #60485a;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 2.2em;
+      color: white;
+      text-shadow: 1px 1px 1px #222;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #c62828;
+    }
+
+    /* Project Title */
+    .project-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 0 auto 40px;
+      padding: 12px 24px;
+      background-color: #c62828;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      text-align: center;
+    }
+
+    .back-container {
+      text-align: center;
+    }
+
+    .back-button:hover {
+      background-color: #a30000;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="logo">Ar. SUNEELKUMAR KODURU</div>
+    <nav class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="walkthroughs.html">Walkthroughs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Project Title Header -->
+  <div class="project-title">Narsipatnam Layout Project</div>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <img src="01_13 - Photo.png" alt="Temple Image 1" />
+    <img src="5235.jpg" alt="Image 5235" />
+<img src="IMAGE-1.png" alt="Image IMAGE-1" />
+<img src="NV-1_1 - Photo.jpg" alt="Image NV-1 1" />
+<img src="NV-1_20 - Photo.jpg" alt="Image NV-1 20" />
+<img src="01_1 - Photo.png" alt="Image 01 1" />
+<img src="01_2 - Photo.png" alt="Image 01 2" />
+<img src="01_5 - Photo.png" alt="Image 01 5" />
+<img src="01_8 - Photo.png" alt="Image 01 8" />
+<img src="01_9 - Photo.png" alt="Image 01 9" />
+<img src="01_11 - Photo.png" alt="Image 01 11" />
+<img src="01_12 - Photo.png" alt="Image 01 12" />
+<img src="01_13 - Photo.png" alt="Image 01 13" />
+<img src="01_16 - Photo.png" alt="Image 01 16" />
+<img src="01_17 - Photo.png" alt="Image 01 17" />
+<img src="01_20 - Photo.png" alt="Image 01 20" />
+<img src="01_22 - Photo.png" alt="Image 01 22" />
+<img src="01_25 - Photo.png" alt="Image 01 25" />
+<img src="01_26 - Photo.png" alt="Image 01 26" />
+<img src="01_27 - Photo.png" alt="Image 01 27" />
+<img src="2.jpg" alt="Image 2" />
+<img src="3.jpg" alt="Image 10" />
+<img src="12.jpg" alt="Image 12" />
+<img src="52.jpg" alt="Image 52" />
+<img src="523.jpg" alt="Image 523" />
+<img src="5234.jpg" alt="Image 5234" />
+<img src="10.jpg" alt="Image 5234" />
+    <img src="IMAGE-2.png" alt="Image IMAGE-2" />
+  </section>
+
+  <!-- Back to Home Button -->
+  <div class="back-container">
+    <a class="back-button" href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ar. Suneelkumar Koduru. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+
+</body>
+
+</html>
+  

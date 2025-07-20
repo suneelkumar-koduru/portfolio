@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walkthroughs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    .top-header {
+      background: #60485a;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 2.2em;
+      color: white;
+      text-shadow: 1px 1px 1px #222;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #c62828;
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .video-container {
+      position: relative;
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-title {
+      padding: 10px;
+      background: #c62828;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+    }
+
+    video:fullscreen {
+      object-fit: contain;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-header">
+    <div class="logo">Ar. SUNEELKUMAR KODURU</div>
+    <nav class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="walkthroughs.html">Walkthroughs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="project-title">Walkthrough Videos</div>
+
+  <section class="gallery">
+    <div class="video-container">
+      <video controls onclick="this.requestFullscreen()">
+        <source src="video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">Hospital Walkthrough</div>
+    </div>
+
+    <div class="video-container">
+      <video controls onclick="this.requestFullscreen()">
+        <source src="video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">Temple Walkthrough</div>
+    </div>
+
+    <div class="video-container">
+      <video width="100%" height="auto" controls>
+  <source src="NarsipatnamLayoutVideo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+<div class="video-title">Railway Station Walkthrough</div>
+</div>
+  
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ar. SUNEELKUMAR KODURU. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+</body>
+
+</html>

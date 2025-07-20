@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ar. Suneel Kumar Koduru - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #60485a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #c62828;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .project-card h2 {
+      background-color: #c62828;
+      color: white;
+      margin: 0;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ar. SUNEELKUMAR KODURU</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="walkthroughs.html">Walkthroughs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="projects-grid">
+      <div class="project-card">
+        <a href="Avekshahospital.html" style="text-decoration: none;">
+          <img src="AVEKSHA HOSPITAL ELEVATION_page-0004.jpg" alt="Aveksha Hospital" />
+          <h2>Aveksha Hospital</h2>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="Gadwalrailwaystation.html" style="text-decoration: none;">
+          <img src="IMAGE-8.jpg" alt="Gadwal Railway Station" />
+          <h2>Gadwal Railway Station</h2>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="Harekrishnatemple.html" style="text-decoration: none;">
+          <img src="1_16 - Photo.jpg" alt="Harekrishna Temple" />
+          <h2>Harekrishna Temple</h2>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="Narsipatnamlayout.html" style="text-decoration: none;">
+          <img src="01_13 - Photo.png" alt="Narsipatnam Layout" />
+          <h2>Narsipatnam Layout</h2>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="Lacantina.html" style="text-decoration: none;">
+          <img src="LA CANTINA VIEWS._page-0009.jpg" alt="La Cantina Project">
+          <h2>La Cantina</h2>
+        </a>
+      </div>
+      
+      <div class="project-card">
+        <a href="apartment.html" style="text-decoration: none;">
+          <img src="images/apartment-thumb.jpg" alt="Apartment Project">
+          <h2>Apartment</h2>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="#" style="text-decoration: none;">
+          <img src="project5.jpg" alt="Project 5" />
+          <h2>Commercial Building Design</h2>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="#" style="text-decoration: none;">
+          <img src="project6.jpg" alt="Project 6" />
+          <h2>Residential Apartment</h2>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ar. SuneelKumar Koduru. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+</body>
+</html>
