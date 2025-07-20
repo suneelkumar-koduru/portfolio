@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Elevation</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    .top-header {
+      background: #60485a;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.8em;
+      color: white;
+      text-shadow: 1px 1px 1px #222;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #c62828;
+    }
+
+    .nav-links a i {
+      margin-right: 6px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8em;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .menu-toggle:focus {
+      outline: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #60485a;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .nav-links a {
+        margin: 10px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 0 auto 40px;
+      padding: 12px 24px;
+      background-color: #c62828;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      text-align: center;
+    }
+
+    .back-container {
+      text-align: center;
+    }
+
+    .back-button:hover {
+      background-color: #a30000;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="logo">Ar. SUNEELKUMAR KODURU</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html"><i class="fas fa-home"></i> Portfolio</a>
+      <a href="walkthroughs.html"><i class="fas fa-video"></i> Walkthroughs</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+
+  <!-- Project Title -->
+  <div class="project-title">House Elevations</div>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <img src="b1e55116-55ee-4d99-b5ce-cc56925864f2.jpeg" alt="Elevation 1" />
+    <img src="elevation2.jpeg" alt="Elevation 2" />
+    <img src="1.jpg" alt="Elevation 3" />
+    <img src="elevation1.jpeg" alt="Elevation 4" />
+    <img src="elevation4.jpeg" alt="Elevation 5" />
+    <img src="elevation5.jpeg" alt="Elevation 6" />
+    <img src="2.jpg" alt="Elevation 7" />
+  </section>
+
+  <!-- Back Button -->
+  <div class="back-container">
+    <a class="back-button" href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ar. Suneelkumar Koduru. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+
+  <!-- JS for mobile menu toggle -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
