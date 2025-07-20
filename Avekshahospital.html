@@ -1,5 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aveksha Hospital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #60485a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav ul li a:hover {
+      color: #c62828;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #402c3d;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 1000;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        right: 40px;
+      }
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 0 auto 40px;
+      padding: 12px 24px;
+      background-color: #c62828;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      text-align: center;
+    }
+
+    .back-container {
+      text-align: center;
+    }
+
+    .back-button:hover {
+      background-color: #a30000;
+    }
+
+    footer {
+      background-color: #37474F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ar. SUNEELKUMAR KODURU</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html"><i class="fas fa-home"></i>Portfolio</a></li>
+        <li><a href="walkthroughs.html"><i class="fas fa-video"></i>Walkthroughs</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i>About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="project-title">Aveksha Hospital Project</div>
+
+  <section class="gallery">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0002.jpg" alt="Hospital View 16">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0003.jpg" alt="Hospital View 17">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0004.jpg" alt="Hospital View 18">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0005.jpg" alt="Hospital View 19">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0006.jpg" alt="Hospital View 20">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0007.jpg" alt="Hospital View 21">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0009.jpg" alt="Hospital View 22">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0010.jpg" alt="Hospital View 23">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0011.jpg" alt="Hospital View 24">
+    <img src="AVEKSHA HOSPITAL ELEVATION_page-0012.jpg" alt="Hospital View 25">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0002.jpg" alt="Hospital View 1">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0003.jpg" alt="Hospital View 2">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0005.jpg" alt="Hospital View 3">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0006.jpg" alt="Hospital View 4">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0007.jpg" alt="Hospital View 5">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0010.jpg" alt="Hospital View 6">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0011.jpg" alt="Hospital View 7">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0013.jpg" alt="Hospital View 8">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0015.jpg" alt="Hospital View 9">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0017.jpg" alt="Hospital View 10">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0018.jpg" alt="Hospital View 11">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0021.jpg" alt="Hospital View 12">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0023.jpg" alt="Hospital View 13">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0024.jpg" alt="Hospital View 14">
+    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0028.jpg" alt="Hospital View 15">
+  </section>
+
+  <div class="back-container">
+    <a class="back-button" href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ar. Suneelkumar Koduru. Website developed by <strong>Haritha Koduru</strong>.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -181,31 +430,7 @@
 
   <!-- Image Gallery -->
   <section class="gallery">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0002.jpg" alt="Hospital View 16">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0003.jpg" alt="Hospital View 17">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0004.jpg" alt="Hospital View 18">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0005.jpg" alt="Hospital View 19">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0006.jpg" alt="Hospital View 20">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0007.jpg" alt="Hospital View 21">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0009.jpg" alt="Hospital View 22">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0010.jpg" alt="Hospital View 23">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0011.jpg" alt="Hospital View 24">
-    <img src="AVEKSHA HOSPITAL ELEVATION_page-0012.jpg" alt="Hospital View 25">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0002.jpg" alt="Hospital View 1">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0003.jpg" alt="Hospital View 2">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0005.jpg" alt="Hospital View 3">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0006.jpg" alt="Hospital View 4">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0007.jpg" alt="Hospital View 5">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0010.jpg" alt="Hospital View 6">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0011.jpg" alt="Hospital View 7">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0013.jpg" alt="Hospital View 8">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0015.jpg" alt="Hospital View 9">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0017.jpg" alt="Hospital View 10">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0018.jpg" alt="Hospital View 11">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0021.jpg" alt="Hospital View 12">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0023.jpg" alt="Hospital View 13">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0024.jpg" alt="Hospital View 14">
-    <img src="AVEKSHA HOSPIOTAL INTERIORS_page-0028.jpg" alt="Hospital View 15">
+    
   </section>
 
   <!-- Back Button -->
