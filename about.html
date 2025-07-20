@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -14,35 +15,82 @@
       color: #333;
     }
 
-    .top-header {
-      background: #60485a;
-      padding: 24px 40px;
+    header {
+      background-color: #60485a;
+      color: white;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
 
-    .logo {
-      font-weight: bold;
-      font-size: 2.2em;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
       color: white;
-      text-shadow: 1px 1px 1px #222;
     }
 
-    .nav-links {
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
       display: flex;
-      gap: 25px;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
     }
 
-    .nav-links a {
-      text-decoration: none;
+    nav ul li a {
       color: white;
-      font-weight: 500;
-      transition: color 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
     }
 
-    .nav-links a:hover {
+    nav ul li a i {
+      margin-right: 6px;
+    }
+
+    nav ul li a:hover {
       color: #c62828;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #402c3d;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 1000;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        right: 40px;
+      }
     }
 
     .about-section {
@@ -101,15 +149,19 @@
 </head>
 
 <body>
-  <div class="top-header">
-    <div class="logo">Ar. SUNEELKUMAR KODURU</div>
-    <nav class="nav-links">
-      <a href="index.html">Portfolio</a>
-      <a href="walkthroughs.html">Walkthroughs</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+
+  <header>
+    <h1>Ar. SUNEELKUMAR KODURU</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Portfolio</a></li>
+        <li><a href="walkthroughs.html"><i class="fas fa-video"></i> Walkthroughs</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
     </nav>
-  </div>
+  </header>
 
   <section class="about-section">
     <div class="about-container">
@@ -117,7 +169,7 @@
       <div class="about-text">
         <h2>About Us</h2>
         <p>
-          AR. Suneel Kumar Koduru is an experienced architect known for delivering innovative and sustainable designs
+          Ar. SuneelKumar Koduru is an experienced architect known for delivering innovative and sustainable designs
           across a wide range of residential, commercial, and religious projects. His vision blends aesthetic
           excellence with functional practicality, resulting in visually captivating and purpose-driven spaces.
         </p>
@@ -128,6 +180,13 @@
   <footer>
     <p>&copy; 2025 Ar. SUNEELKUMAR KODURU. Website developed by <strong>Haritha Koduru</strong>.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+
 </body>
 
 </html>
