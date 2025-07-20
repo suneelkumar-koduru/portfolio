@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>House Interiors</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -51,6 +55,12 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li a i {
+      margin-right: 6px;
     }
 
     nav ul li a:hover {
@@ -159,10 +169,10 @@
     <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     <nav>
       <ul id="menu">
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="walkthroughs.html">Walkthroughs</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Portfolio</a></li>
+        <li><a href="walkthroughs.html"><i class="fas fa-video"></i> Walkthroughs</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
