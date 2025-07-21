@@ -206,6 +206,11 @@
     function toggleMenu() {
       document.getElementById('menu').classList.toggle('show');
     }
+
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
   </script>
 
 </body>
