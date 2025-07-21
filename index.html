@@ -117,8 +117,6 @@
       width: 100%;
       height: 220px;
       object-fit: cover;
-      pointer-events: none; /* Optional: disables drag */
-      user-select: none;    /* Optional: disables select */
     }
 
     .project-card h2 {
@@ -150,7 +148,7 @@
     }
   </style>
 </head>
-<body oncontextmenu="return false">
+<body>
 
   <header>
     <h1>Ar. SUNEELKUMAR KODURU</h1>
@@ -232,7 +230,7 @@
   <script>
     function toggleMenu() {
       document.getElementById('menu').classList.toggle('show');
-    } 
+    }
   </script>
 
 </body>
